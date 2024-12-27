@@ -1,0 +1,40 @@
+body {
+    font-family: Arial;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #000000;
+  }
+  
+  form {
+    background-color: #d70f9b;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+  }
+  
+  input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 60px;
+    background-color: #007BFF;
+    color: rgb(152, 55, 55);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #1a71cf;
+  }
+  
