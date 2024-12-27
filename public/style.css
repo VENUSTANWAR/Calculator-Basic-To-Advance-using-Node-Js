@@ -1,40 +1,59 @@
 body {
-    font-family: Arial;
-    background-color: #f9f9f9;
-    text-align: center;
-    padding: 20px;
+    font-family: Arial ;
+    background: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
   }
   
-  h1 {
-    color: #000000;
-  }
-  
-  form {
-    background-color: #d70f9b;
-    padding: 20px;
+  .calculator {
+    background: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: inline-block;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
   }
   
-  input {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
+  #display {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 20px;
+    text-align: right;
+    padding: 5px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
   }
   
   button {
-    padding: 10px 60px;
-    background-color: #007BFF;
-    color: rgb(152, 55, 55);
+    height: 50px;
+    font-size: 18px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    background: #f0f0f0;
+    transition: background 0.3s ease;
   }
   
   button:hover {
-    background-color: #1a71cf;
+    background: #ddd;
+  }
+  
+  .equal {
+    grid-column: span 4;
+    background: #007BFF;
+    color: white;
+  }
+  
+  .equal:hover {
+    background: #0b0b0b;
   }
   

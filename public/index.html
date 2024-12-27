@@ -1,72 +1,40 @@
-<!--<!DOCTYPE html>
-<html lang ="eng">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Basic Calculator using html css and javaScript</title>
-
-  <!--<script src="calculator.js"></script> -->
-  
- <!--- <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
-
-  <h1>Calculator 123</h1>
-  
-  <form action="/calculate" method="POST">
-
-    <p>First Number:</p>
-    <input type="text" name="num1" required>
-    <br><br>
-
-    <p>Operator (+, -, *, /):</p>
-    <input type="text" name="operation" required>
-    <br><br>
-
-    <p>Second Number:</p>
-    <input type="text" name="num2" required>
-  
-    
-    <input type="submit" value ="submit">
-    
-  </form>
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Calculator</title>
+  <title>Calculator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Simple Calculator</h1>
+  <div class="calculator">
+    <input type="text" id="display" readonly>
+    <div class="buttons">
+      <button onclick="pressKey('7')">7</button>
+      <button onclick="pressKey('8')">8</button>
+      <button onclick="pressKey('9')">9</button>
+      <button onclick="pressKey('/')">/</button>
 
-  <form action="/calculate" method="POST">
+      <button onclick="pressKey('4')">4</button>
+      <button onclick="pressKey('5')">5</button>
+      <button onclick="pressKey('6')">6</button>
+      <button onclick="pressKey('*')">*</button>
 
-    <label for="num1">First Number:</label>
-    <input type="number" id="num1" name="num1" required>
-    <br><br>
-  
-    <label for="operation">Operator (+, -, *, /):</label>
-    <input type="text" id="operation" name="operation" required>
-    <br><br>
-  
-    <label for="num2">Second Number:</label>
-    <input type="number" id="num2" name="num2" required>
-    <br><br>
-  
-    <input type="submit" value="Calculate">
-  
-  </form>
-  
+      <button onclick="pressKey('1')">1</button>
+      <button onclick="pressKey('2')">2</button>
+      <button onclick="pressKey('3')">3</button>
+      <button onclick="pressKey('-')">-</button>
+
+      <button onclick="pressKey('0')">0</button>
+      <button onclick="pressKey('.')">.</button>
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="pressKey('+')">+</button>
 
 
+      <button class="equal" onclick="calculate()">=</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
